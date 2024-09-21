@@ -10,7 +10,6 @@ var findAllConcatenatedWordsInADict = function(words) {
         let isSubWord = Array(word.length + 1).fill(false);
         isSubWord[0]= true
 
-
         for (let i = 1; i <= word.length; i++) {
             for (let j = 0; j < i; j++) {
                 if (!isSubWord[j]) continue;
