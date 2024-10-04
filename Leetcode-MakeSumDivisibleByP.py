@@ -17,7 +17,7 @@ class Solution:
         }
 
         for i,n in enumerate(nums):
-            cur_sum = (cur_sum + n) % p
+            cur_sum = (cur_sum + n) % pL
             prefix = (cur_sum - remain + p) % p
             if prefix in remain_to_index:
                 length = i - remain_to_index[prefix]
